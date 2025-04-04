@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kareem Gabr | Portfolio</title>
+    <style>
+        body { 
+            margin: 0; 
+            overflow: hidden;
+            background-color: #000; 
+        }
+        canvas { 
+            display: block; 
+        }
+        #infoBox {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: none;
+            font-family: 'Arial', sans-serif;
+            max-width: 400px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 15px rgba(0, 100, 255, 0.5);
+        }
+        #infoBox h2 {
+            margin-top: 0;
+            color: #3399ff;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            padding-bottom: 10px;
+        }
+        #controls {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+        }
+    </style>
+    <!-- Load Three.js libraries via traditional script tags -->
+    <script src="https://cdn.jsdelivr.net/npm/three@latest/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@latest/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@latest/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+    <div id="infoBox"></div>
+    <div id="controls">
+        Controls: W,A,S,D to move | Mouse to rotate & zoom
+    </div>
+    <!-- Note: changed from type="module" to regular script -->
+    <script src="./portfolio.js"></script>
+</body>
+</html>
